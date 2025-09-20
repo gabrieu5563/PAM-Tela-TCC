@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Historico.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="PillButtonStyle" TargetType="Button">
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Padding" Value="14,8" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="BackgroundColor" Value="#2F80ED" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BorderColor" Value="#2F80ED" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="MinimumWidthRequest" Value="160" />
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <Setter.Value>
+                        <VisualStateGroupList>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="#2F80ED" />
+                                        <Setter Property="TextColor" Value="White" />
+                                        <Setter Property="BorderColor" Value="#2F80ED" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="White" />
+                                        <Setter Property="TextColor" Value="#2F80ED" />
+                                        <Setter Property="BorderColor" Value="#2F80ED" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateGroupList>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="Label" x:Key="SectionTitle">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="TextColor" Value="#2F80ED" />
+                <Setter Property="Margin" Value="10,18,0,6" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="PageTitle">
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="14,12,14,6" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
