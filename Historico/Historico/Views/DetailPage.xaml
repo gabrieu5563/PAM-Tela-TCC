@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<!--Gabriel Joaquim e João Victor-->
+    
+    <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Historico.Views.DetailPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Detalhe">
+    Title="Detalhe"
+    Shell.NavBarIsVisible="False"
+    NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, *">
-            <!-- Top bar -->
             <Grid BackgroundColor="#2F80ED" Padding="12" Row="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -23,7 +26,6 @@
                     <Label Text="voltar" VerticalOptions="Center" FontSize="18" TextColor="White" />
                 </StackLayout>
 
-                <!-- empty center / could add title -->
             </Grid>
 
             <ScrollView Grid.Row="1">
@@ -35,7 +37,6 @@
                     <Label Text="1º Passo" FontSize="20" FontAttributes="Bold" TextColor="#2F80ED" />
                     <Label Text="{Binding Subtitle}" FontSize="14" />
 
-                    <!-- image with shadow -->
                     <Frame CornerRadius="20" Padding="8" HasShadow="True" VerticalOptions="Start" HorizontalOptions="Start">
                         <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="360" WidthRequest="200" />
                     </Frame>
