@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <!--Gabriel Joaquim e João Victor-->
-    
-    <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Historico.Views.DetailPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"

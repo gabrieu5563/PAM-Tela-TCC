@@ -20,7 +20,6 @@ public class MainViewModel
         SelectHistoryCommand = new Command<HistoryItem>(async item =>
         {
             if (item == null) return;
-            // Navigate to detail page passing the item (simple approach)
             await _navigation.PushAsync(new Views.DetailPage(item));
         });
 

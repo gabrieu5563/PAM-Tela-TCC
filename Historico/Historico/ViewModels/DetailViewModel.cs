@@ -10,8 +10,6 @@ public class DetailViewModel
     {
         Item = item;
     }
-
-    // Expose convenience properties for binding if needed:
     public string Title => Item?.Title ?? string.Empty;
     public string Subtitle => Item?.Subtitle ?? string.Empty;
     public string Content => Item?.Content ?? string.Empty;
